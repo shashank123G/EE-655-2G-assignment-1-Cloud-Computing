@@ -1,11 +1,13 @@
-IoT Device Management API Documentation
+# IoT Device Management API Documentation
 
-Base URL
-http://localhost:3000
+**Base URL**
 
-1. Device Registration
-Endpoint
 
+`http://localhost:3000`
+
+**1. Device Registration Endpoint**
+
+```
 POST /register
 
 Request Body
@@ -19,7 +21,9 @@ Example Request:
   "deviceId": "device123",
   "deviceType": "temperature_sensor"
 }
+```
 
+```
 Response
 
 Status: 201 Created
@@ -29,10 +33,12 @@ Status: 400 Bad Request
 Body: Error message if deviceId or deviceType is missing or invalid.
 Status: 409 Conflict
 Body: Error message if the device already exists.
+```
 
-2. Displaying Devices
-Endpoint
 
+**2. Displaying Devices Endpoint**
+
+```
 GET /show
 
 Response
@@ -42,10 +48,12 @@ Body: List of registered devices.
 Error Responses
 Status: 500 Internal Server Error
 Body: Error message if there's an issue retrieving the devices.
+```
 
-3. Receiving Device Data
-Endpoint
 
+**3. Receiving Device Data Endpoint**
+
+```
 POST /data
 
 Request Body
@@ -58,7 +66,9 @@ Example Request
   "deviceId": "device123",
   "data": "25°C"
 }
+```
 
+```
 Response
 
 Status: 200 OK
@@ -66,10 +76,11 @@ Body: Success message if data is received successfully.
 Error Responses
 Status: 400 Bad Request
 Body: Error message if deviceId or data is missing or invalid.
+```
 
-4. Sending Commands to Devices
-Endpoint
+**4. Sending Commands to Devices Endpoint**
 
+```
 POST /command
 
 Request Body
@@ -82,7 +93,9 @@ Example Request
   "deviceId": "device123",
   "command": "turn_on"
 }
+```
 
+```
 Response
 
 Status: 200 OK
@@ -90,3 +103,4 @@ Body: Success message if command is sent successfully.
 Error Responses
 Status: 400 Bad Request
 Body: Error message if deviceId or command is missing or invalid.
+```

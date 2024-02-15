@@ -1,0 +1,25 @@
+2024-02-12T20:27:52.018Z: Device registered - Device ID: device123, Device Type: temperature_sensor
+2024-02-12T20:28:19.088Z: Device registered - Device ID: sensor_01, Device Type: motion_detector
+2024-02-12T20:28:48.838Z: Device registered - Device ID: actuatorA1, Device Type: valve_control
+2024-02-12T20:29:12.823Z: Data received from Device ID device123 - 100
+2024-02-12T20:29:56.485Z: Command sent to Device ID device123 - burn
+2024-02-12T20:30:03.860Z: Data received from Device ID device123 - 100
+2024-02-12T20:30:07.858Z: Command sent to Device ID device123 - burn
+2024-02-13T01:23:58.160Z: Data received from Device ID device123 - 100
+2024-02-13T01:24:17.573Z: Command sent to Device ID device123 - burn it up
+2024-02-13T01:33:51.370Z: Data received from Device ID device123 - 100
+2024-02-13T01:33:53.598Z: Command sent to Device ID device123 - burn it up
+2024-02-13T01:52:20.808Z: Device registered - Device ID: hgdfhtd, Device Type: jhjhjgc
+2024-02-14T02:09:16.125Z: Device registered - Device ID: sdfghj, Device Type: werty
+2024-02-14T02:09:44.834Z: Data received from Device ID sdfghj - qwdfgb
+2024-02-14T02:09:54.891Z: Command sent to Device ID sdfghj - this is a voice sensor
+2024-02-14T02:23:55.788Z: Device registered - Device ID: new device, Device Type: new type
+2024-02-14T02:24:20.274Z: Data received from Device ID new device - new data
+2024-02-14T02:24:35.599Z: Command sent to Device ID new device - new command
+2024-02-14T02:59:12.930Z: Device registered - Device ID: sdfghj, Device Type: werty
+2024-02-15T06:08:48.993Z: Device registered - Device ID: sdfghjk, Device Type: sdfgm
+2024-02-15T06:09:17.375Z: Data received from Device ID sdfghjk - sdftyu
+2024-02-15T06:09:34.108Z: Command sent to Device ID sdfghjk - qwerty
+2024-02-15T07:01:31.421Z: Device registered - Device ID: new motor, Device Type: machine
+2024-02-15T07:01:56.267Z: Data received from Device ID new motor - electrical
+2024-02-15T07:02:21.343Z: Command sent to Device ID new motor - working success

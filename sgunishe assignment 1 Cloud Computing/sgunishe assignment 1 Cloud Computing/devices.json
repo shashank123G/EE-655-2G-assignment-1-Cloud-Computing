@@ -1,0 +1,30 @@
+[
+  {
+    "deviceId": "device123",
+    "deviceType": "temperature_sensor"
+  },
+  {
+    "deviceId": "sensor_01",
+    "deviceType": "motion_detector"
+  },
+  {
+    "deviceId": "actuatorA1",
+    "deviceType": "valve_control"
+  },
+  {
+    "deviceId": "new device",
+    "deviceType": "new type"
+  },
+  {
+    "deviceId": "sdfghj",
+    "deviceType": "werty"
+  },
+  {
+    "deviceId": "sdfghjk",
+    "deviceType": "sdfgm"
+  },
+  {
+    "deviceId": "new motor",
+    "deviceType": "machine"
+  }
+]

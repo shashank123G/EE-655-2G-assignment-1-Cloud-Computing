@@ -1,0 +1,23 @@
+[
+    {
+        "id": "16788b4e264dc0e7",
+        "type": "function",
+        "z": "8abe55238f0d4dad",
+        "name": "Fuel Consumption",
+        "func": "// Simulate fuel consump􀆟on\nfunction generateFuelConsumption(speed, engineTemperature) {\n// Base fuel consump􀆟on as miles per gallon (mpg) or liters per 100km\nlet baseFuelConsumption = 30; // Example base value, assuming 30 mpg\nif (speed > 60) {\nbaseFuelConsumption -= (speed - 60) * 0.2;\n}\nif (engineTemperature > 200) {\nbaseFuelConsumption -= (engineTemperature - 200) * 0.1;\n}\n// Add some randomness to simulate real-world varia􀆟ons\nlet randomVariation = Math.random() * 2; // +/- 1 mpg\nbaseFuelConsumption += (randomVariation - 1);\n// Ensure fuel consump􀆟on doesn't go below a threshold\nif (baseFuelConsumption < 10) {\nbaseFuelConsumption = 10; // Minimum fuel consump􀆟on\n}\nreturn baseFuelConsumption;\n}\n// Example usage in Node-RED func􀆟on node\nlet speed = msg.payload.speed; // Extract speed from incoming message payload\nlet engineTemperature = msg.payload.engineTemperature; // Extract engine temperature from incoming message payload\nlet fuelConsumption = generateFuelConsumption(speed, engineTemperature);\n// Create a new message payload with the simulated fuel consump􀆟on value\nmsg.payload = {\nfuelConsumption: fuelConsumption.toFixed(2) // Round to 2 decimal places\n};\nreturn msg; // Return the message object to pass to the next node",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "c2d36c4fcd1dab5c",
+                "e509b42fcbfcdbfe"
+            ]
+        ]
+    }
+]
